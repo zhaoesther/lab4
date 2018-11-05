@@ -24,6 +24,9 @@ $(document).ready(function() {
 
   var parentDiv = $("#templatedProjects");
 
+  // BEGIN - STEP 1
+  /*
+
   // start with a simple template
   var html = template(simpleData);
   console.log(html);
@@ -36,6 +39,12 @@ $(document).ready(function() {
     parentDiv.append(curHtml);
   }
 
+  */
+  // END - STEP 1
+
+
+  // BEGIN - STEP 2
+  /*
 
   // when you first load the page, set a custom name if you have one:
   var name = localStorage.getItem('customName');
@@ -51,4 +60,30 @@ $(document).ready(function() {
       localStorage.setItem('customName', newName);
     }
   });
-})
+
+  */
+  // END - STEP 2
+
+
+  // BEGIN - STEP 3
+  /*
+
+  // Use the URLSearchParams API to make fake-database queries using a URL
+  // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+  var queryParams = new URLSearchParams(window.location.search);
+  var projectTitle = queryParams.get('project');
+  console.log('query for', projectTitle);
+
+  // to get this to work like in class, comment out the "STEP 1" parts
+  // above between BEGIN and END.
+  for (var i = 0; i < complexData.length; i++) {
+    var curData = complexData[i];
+    if (curData.title == projectTitle) {
+      var curHtml = template(curData);
+      parentDiv.append(curHtml);
+    }
+  }
+
+  */
+  // END - STEP 3
+});
