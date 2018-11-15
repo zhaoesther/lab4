@@ -25,7 +25,7 @@ $(document).ready(function() {
   var parentDiv = $("#templatedProjects");
 
   // BEGIN - STEP 1
-  /*
+
 
   // start with a simple template
   var html = template(simpleData);
@@ -39,12 +39,12 @@ $(document).ready(function() {
     parentDiv.append(curHtml);
   }
 
-  */
+
   // END - STEP 1
 
 
   // BEGIN - STEP 2
-  /*
+
 
   // when you first load the page, set a custom name if you have one:
   var name = localStorage.getItem('customName');
@@ -61,12 +61,12 @@ $(document).ready(function() {
     }
   });
 
-  */
+
   // END - STEP 2
 
 
   // BEGIN - STEP 3
-  /*
+
 
   // Use the URLSearchParams API to make fake-database queries using a URL
   // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
@@ -84,6 +84,6 @@ $(document).ready(function() {
     }
   }
 
-  */
+
   // END - STEP 3
 });
